@@ -1,0 +1,56 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-bg-signup);
+  }
+  
+  .form {
+    background: var(--color-bg-signup);  
+    border-radius: 10px;
+    width: 350px;
+  }
+  
+  
+  .input {
+    height: 40px;
+    width: 340px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: var(--color-text);
+    margin: 5px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 3px rgba(74, 144, 226, 0.4);
+  }
+  
+  .submitButton {
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: middle;
+  }
+
+  .checkboxLabel {
+    display: inline-flex; 
+    align-items: center; 
+    margin: 10px 5px;
+    font-size: 12px;
+    gap: 5px;
+  }
+  
+  .termsLink {
+    text-decoration: none;
+  }
+
+  

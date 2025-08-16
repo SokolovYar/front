@@ -1,0 +1,74 @@
+src/
+│
+├── app/                  # Инициализация приложения (router, store, providers)
+│   ├── index.jsx          # Точка входа
+│   ├── App.jsx            # Корневой компонент
+│   ├── providers/         # Провайдеры контекста, стейта и т.п.
+│   │   ├── AuthProvider/
+│   │   │   ├── index.js
+│   │   │   └── AuthProvider.jsx
+│   │   └── Router/
+│   │       ├── index.jsx
+│   │       └── routes.js
+│   ├── styles/            # Глобальные стили
+│   └── config/            # Конфиги приложения (env, настройки API)
+│
+├── processes/             # Процессы (сквозная логика приложения)
+│   └── auth/
+│       ├── model/         # useAuth hook, стейт авторизации
+│       ├── lib/           # вспомогательная логика (refresh, проверка токена)
+│       ├── ui/            # обертки, например RequireAuth
+│       └── index.js
+│
+├── pages/                 # Целые страницы приложения
+│   ├── Login/
+│   │   ├── index.jsx
+│   │   └── ui/
+│   │       └── LoginPage.jsx
+│   ├── Home/
+│   │   ├── index.jsx
+│   │   └── ui/
+│   │       └── HomePage.jsx
+│   └── Profile/
+│       ├── index.jsx
+│       └── ui/
+│           └── ProfilePage.jsx
+│
+├── features/              # Законченные фичи (login-form, logout-btn)
+│   ├── auth-by-email/
+│   │   ├── model/
+│   │   │   └── hooks.js
+│   │   ├── api/
+│   │   │   └── login.js
+│   │   └── ui/
+│   │       └── LoginForm.jsx
+│   └── logout/
+│       ├── model/
+│       │   └── hooks.js
+│       └── ui/
+│           └── LogoutButton.jsx
+│
+├── entities/              # Минимальные сущности (User, Article, Product)
+│   ├── user/
+│   │   ├── model/
+│   │   │   └── types.js
+│   │   ├── api/
+│   │   │   └── getUser.js
+│   │   └── ui/
+│   │       └── UserAvatar.jsx
+│
+├── shared/                # Общие переиспользуемые модули
+│   ├── api/
+│   │   ├── axios.js
+│   │   └── endpoints.js
+│   ├── lib/
+│   │   ├── tokenStore.js
+│   │   └── helpers.js
+│   ├── ui/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   └── Spinner.jsx
+│   ├── config.js          # общие конфиги (например, API_BASE_URL)
+│   └── styles/            # общие стили/переменные
+│
+└── index.js               # стартовая точка проекта (ReactDOM.createRoot)

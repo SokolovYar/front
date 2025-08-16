@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    background-color: var(--color-bg-signup);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Левый wrapper */
+.wrapper-left {
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+/* Правый wrapper */
+.wrapper-right {
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.divider {
+    width: 2px;
+    background-color: var(--color-border);
+}
